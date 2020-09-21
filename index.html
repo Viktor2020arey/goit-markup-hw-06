@@ -423,9 +423,36 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
         </button>
+        <form class="js-speaker-form">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name">
+
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail">
+
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js">
+    </script>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
     </script>
   </body>
 </html>
