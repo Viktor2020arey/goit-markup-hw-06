@@ -423,23 +423,27 @@
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
         </button>
-        <form class="js-speaker-form">
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name">
-          <br>
+        <form class="form js-speaker-form">
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" placeholder="Пупко Пупкович">
+          </div>
 
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel">
-          <br>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="12345">
+          </div>
 
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail">
-          <br>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" placeholder="Sobaka@.gmailsovok">
+          </div>
 
-          <label for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-          <br>
-
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+          </div>
+          
           <input type="checkbox" name="policy" id="policy">
           <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
 

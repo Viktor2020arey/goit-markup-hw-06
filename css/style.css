@@ -681,3 +681,28 @@ footer {
 textarea {
   resize: none;
 }
+.form {
+  width: 448px;
+  outline: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  outline: 2px solid green;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.form-field input {
+  margin: 0;
+  padding: 0;
+}
+
+.form-field input::placeholder {
+  color: red;
+}
