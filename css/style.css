@@ -703,6 +703,7 @@ textarea {
 .form-field input {
   margin: 0;
   padding: 0;
+  height: 40px;
 }
 
 .form-field input::placeholder,
@@ -728,4 +729,15 @@ textarea {
   color: var(--title-text-color);
 
   margin-bottom: 12px;
+}
+
+.form-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
 }
