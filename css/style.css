@@ -763,14 +763,20 @@ textarea {
   height: 120px;
   width: 448px;
 
-  /* font-family: Roboto;
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5); */
+  color: rgba(117, 117, 117, 0.5);
 }
+
+.form-field.checkbox {
+  flex-direction: row;
+  align-items: center;
+}
+
 .checkbox-label {
   font-family: Roboto;
   font-style: normal;
@@ -783,6 +789,9 @@ textarea {
   color: var(--primary-text-color);
 }
 
+.checkbox .checkbox-input {
+  height: 15px;
+}
 .contract {
   color: var(--accent-color);
 }
